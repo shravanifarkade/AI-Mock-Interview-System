@@ -1,32 +1,71 @@
-## <img src="https://github.com/MeghanathShetty/Mock-Interview-System-Python/assets/127648939/afd19053-6bfd-4100-b859-55cd25bbd66f" alt="Image Alt Text" style="width:27px;" /> Mock Interview System
+# AI Mock Interview System – Answer Quality Evaluation 🤖🎤
 
-## Visit at https://mock-interview-system-python.vercel.app/
+An **AI & Machine Learning–based Mock Interview System** that evaluates the **quality of interview answers** using **Natural Language Processing (NLP)** and **Machine Learning models**.
 
-### Note : Due to API limitations, this application only functions properly on the latest browsers such as Google Chrome, Microsoft Edge, etc.
-### Recomended : Google Chrome, Desktop Environment.
+The system compares a candidate’s answer with reference answers and predicts answer quality levels such as *Poor, Average, Good, or Excellent*, along with meaningful feedback.
 
-## Software Features
-* Front End : React
-* Back End : Python - Flask
-* Generate questions based on input using AI ( gemini ).
-* No of face detections for cheat analysis.
-* Emotion analysis.
-* Speech recognition for answering questions.
-* AI ( gemini ) generated review based on interview performance including emotion and cheat analysis.
-* Responsive Design.
+---
 
-## Preview
-### Desktop version
-#### Landing Page
-![image](https://github.com/MeghanathShetty/Mock-Interview-System-Python/assets/127648939/80b66b7f-f86e-4ffd-b185-b3f57e4e9a02)
-#### Job-Title Input
-![image](https://github.com/MeghanathShetty/Mock-Interview-System-Python/assets/127648939/263c8ffe-79a2-4dc7-9096-48e0043b23b0)
+## 📌 Project Motivation
 
-#### Interview Page
-![image](https://github.com/MeghanathShetty/Mock-Interview-System-Python/assets/127648939/03e1d7b1-0405-4827-8841-87d83d7541be)
+Interview preparation platforms often lack **objective, automated evaluation** of candidate answers.  
+This project addresses that gap by applying **semantic similarity, linguistic features, and ML classification** to simulate real interview feedback.
 
-#### Review Page
-![image](https://github.com/MeghanathShetty/Mock-Interview-System-Python/assets/127648939/618aadb0-5881-4410-a815-e06e9410963b)
+---
 
-### Mobile Version
-<img src="https://github.com/MeghanathShetty/Mock-Interview-System-Python/assets/127648939/4d6acbca-6144-4aba-8d4e-3540b308fc9f" alt="Image Alt Text" style="width:300px;" />
+## 🎯 Key Objectives
+
+- Simulate real interview answer evaluation
+- Measure semantic similarity between answers
+- Use ML to classify answer quality
+- Provide instant, explainable feedback
+- Support multiple interview domains
+
+---
+
+## 🧠 AIML Concepts & Techniques Used
+
+### 🔹 Natural Language Processing (NLP)
+- Text preprocessing & normalization
+- Stopword analysis
+- Readability analysis (Flesch Reading Ease)
+- TF-IDF vectorization
+
+### 🔹 Semantic Similarity
+- **SBERT (Sentence-BERT)** embeddings
+- Cosine similarity between question–answer pairs
+
+### 🔹 Machine Learning
+- Feature engineering using:
+  - SBERT cosine similarity
+  - TF-IDF similarity
+  - Answer length ratio
+  - Stopword ratio
+  - Readability score
+- **Logistic Regression** for multi-class classification
+- Class imbalance handling using **class weights**
+
+### 🔹 Datasets (Hugging Face)
+- Machine Learning interview Q&A
+- Artificial Intelligence interview Q&A
+- HR interview questions
+- Technical interview datasets
+- CS Theory Q&A dataset
+
+---
+
+## 🛠️ Technology Stack
+
+- **Language:** Python  
+- **ML & NLP:**  
+  - Sentence Transformers (SBERT)  
+  - scikit-learn  
+  - NLTK  
+  - textstat  
+- **Datasets:** Hugging Face Datasets API  
+- **Model Persistence:** Pickle  
+
+---
+
+## 📂 Project Structure
+
